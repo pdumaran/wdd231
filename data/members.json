@@ -1,0 +1,23 @@
+{
+    "family_name": "Bangay",
+    "move_in_date": "2026-01-15",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Lucile Bangay",
+            "gender": "Male",
+            "birthdate": "2000-05-06"
+        },
+        {
+            "name": "Madelyn Bangay",
+            "gender": "Female",
+            "birthdate": "1975-10-12"
+        },
+        {
+            "name": "Lisi Bangay",
+            "gender": "Female",
+            "birthdate": "2005-03-22"
+        }
+    ]
+}
