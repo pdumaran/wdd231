@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumaguete Chamber of Commerce - Directory</title>
+    <meta name="description"
+        content="Business directory of the Dumaguete Chamber of Commerce promoting local growth and networking.">
+    <meta name="author" content="Pierre Phil D. Bangay">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Meta Tags (Facebook) -->
+    <meta property="og:title" content="Dumaguete Chamber of Commerce - Business Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pdumaran.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://pdumaran.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore local businesses and chamber members in Dumaguete City.">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+    <script src="js/members.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Dumaguete Chamber Logo" width="60" height="60" loading="lazy">
+            <h1>Dumaguete Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+
+        <!-- Toggle View Buttons -->
+        <div class="views-menu">
+            <button id="grid" aria-label="Grid View">Grid View ▦</button>
+            <button id="list" aria-label="List View">List View ☰</button>
+        </div>
+
+        <!-- Container where dynamic members will render -->
+        <article id="members-container" class="grid">
+            <!-- Member cards/list items populated via JavaScript -->
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Dumaguete Chamber of Commerce</strong></p>
+
+            <p>Rizal Boulevard, Dumaguete City, Negros Oriental</p>
+            <p>info@dumaguetechamber.org | (035) 422-0000</p>
+        </div>
+        <div class="footer-dev">
+            <p>WDD 231 Class Project | Pierre Phil D. Bangay</p>
+            <p>© <span id="currentyear"></span> Dumaguete Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

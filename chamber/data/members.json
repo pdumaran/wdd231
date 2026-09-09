@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Easytech Solution Computer Repair Services",
+        "address": "National Highway, Real St, Dumaguete City",
+        "phone": "0935 179 5693",
+        "website": "https://www.facebook.com/easytechsolutiondumagueteofficial",
+        "image": "images/business1.webp",
+        "membershipLevel": 3,
+        "tagline": "Innovative IT & Web Services"
+    },
+    {
+        "name": "The Cabin Blend",
+        "address": "Purok 4 Lower Batinguel, Dumaguete City",
+        "phone": "0998 374 9562",
+        "website": "https://www.facebook.com/thecabinblend/",
+        "image": "images/business2.webp",
+        "membershipLevel": 2,
+        "tagline": "Locally Sourced Organic Coffee"
+    },
+    {
+        "name": "SNR Graphics and Prints",
+        "address": "Vida Royal Street Purok Jasmin Lower Candau-ay , Dumaguete City",
+        "phone": "0927 384 9702",
+        "website": "https://www.facebook.com/snrgraphicsandprints/",
+        "image": "images/business3.webp",
+        "membershipLevel": 1,
+        "tagline": "Quality Print & Design Solutions"
+    },
+    {
+        "name": "POS Marketing Enterprises Incorporated",
+        "address": "8845+V27, Perdices St, Dumaguete City",
+        "phone": "0917 941 1992",
+        "website": "https://posmarketingdgte.com",
+        "image": "images/business4.webp",
+        "membershipLevel": 3,
+        "tagline": "Appliance And Home Furnitures GSAT Exclusive Distributor"
+    },
+    {
+        "name": "Camella Homes",
+        "address": "Diversion Road, Cantil-e, Dumaguete City",
+        "phone": "0956 937 7285",
+        "website": "https://www.facebook.com/camellahomesdumaguetenegros/",
+        "image": "images/business5.webp",
+        "membershipLevel": 2,
+        "tagline": "Residential Properties"
+    },
+    {
+        "name": "The Green Chef Plant-Based Restaurant Dumaguete",
+        "address": "Sta. Rosa St., Dumaguete City",
+        "phone": "0991 677 9151",
+        "website": "https://www.facebook.com/thegreenchefdumaguete",
+        "image": "images/business6.webp",
+        "membershipLevel": 1,
+        "tagline": "Authentic Regional Cuisine"
+    },
+    {
+        "name": "Robinsons Place Dumaguete",
+        "address": "Dumaguete Business Park, Calindagan, Dumaguete City",
+        "phone": "(035) 421 1690",
+        "website": "https://robinsonsmalls.com",
+        "image": "images/business7.webp",
+        "membershipLevel": 2,
+        "tagline": "Shopping Mall"
+    }
+]
