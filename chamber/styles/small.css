@@ -25,7 +25,11 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
+}
+
+.logo-container img {
+    height: auto;
 }
 
 .logo-container .site-title {
@@ -97,6 +101,10 @@ main h1 {
     font-weight: bold;
 }
 
+.views-menu button:hover {
+    background-color: #002244;
+}
+
 /* Directory Grid View */
 #members-container.grid {
     display: grid;
@@ -118,6 +126,7 @@ main h1 {
     max-width: 150px;
     height: auto;
     margin: 0 auto 0.5rem;
+    object-fit: contain;
 }
 
 /* Directory List View */
@@ -138,45 +147,55 @@ main h1 {
 
 .list .member-card img {
     display: none;
+    /* Hide images in list mode */
 }
 
 /* Footer */
 footer {
     background-color: #003366;
     color: #fff;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     margin-top: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-info,
+.footer-dev {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1.25rem;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    /* Ensures icons match white footer text */
 }
 
 footer a {
     color: #ffcc00;
-}
-
-/* Social Media Section */
-.social-links {
-    display: flex;
-    gap: 1.25rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-links a {
-    color: #fff;
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.social-links a:hover {
-    color: #ffcc00;
-    transform: translateY(-2px);
-}
-
-.social-icon {
-    width: 28px;
-    height: 28px;
-    display: block;
 }
