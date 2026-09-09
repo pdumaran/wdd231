@@ -149,9 +149,34 @@ footer {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 footer a {
     color: #ffcc00;
+}
+
+/* Social Media Section */
+.social-links {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #fff;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
 }

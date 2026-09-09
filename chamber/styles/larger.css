@@ -22,7 +22,12 @@
     footer {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         text-align: left;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     .list .member-card {
