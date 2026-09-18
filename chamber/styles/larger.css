@@ -1,25 +1,78 @@
 @media (min-width: 768px) {
+
+    /* Header & Nav Desktop Fixes */
     #menu-toggle {
         display: none;
     }
 
     nav {
-        display: block;
+        display: block !important;
         width: auto;
+        margin-top: 0;
     }
 
     nav ul {
-        display: flex;
-        gap: 1rem;
-        padding-top: 0;
+        flex-direction: row;
+        gap: 0.5rem;
     }
 
     nav a {
         padding: 0.5rem 1rem;
         border-radius: 4px;
+        border-bottom: none;
     }
 
-    /* Footer - 3-Column Layout */
+    /* Main Grid Desktop Layout */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+        gap: 1.5rem;
+    }
+
+    .hero-section {
+        grid-area: hero;
+    }
+
+    .hero-cta {
+        max-width: 50%;
+        text-align: left;
+        padding: 2rem;
+        left: 2rem;
+        bottom: 2rem;
+        right: auto;
+        border-radius: 8px;
+    }
+
+    .events-card {
+        grid-area: events;
+    }
+
+    .weather-card {
+        grid-area: weather;
+    }
+
+    .spotlights-container {
+        grid-area: spotlights;
+    }
+
+    .spotlights-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Directory Page Desktop List View */
+    .list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    /* Footer Desktop Layout */
     footer {
         flex-direction: row;
         justify-content: space-between;
@@ -30,6 +83,7 @@
 
     .footer-info {
         flex: 1;
+        text-align: left;
     }
 
     .footer-social {
@@ -40,12 +94,5 @@
     .footer-dev {
         flex: 1;
         text-align: right;
-    }
-
-    /* List view table-like display on desktop */
-    .list .member-card {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        align-items: center;
     }
 }
