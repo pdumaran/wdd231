@@ -66,6 +66,40 @@ const totalCreditsDisplay = document.querySelector('#total-credits');
 const allBtn = document.querySelector('#all-btn');
 const cseBtn = document.querySelector('#cse-btn');
 const wddBtn = document.querySelector('#wdd-btn');
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close modal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+// Close modal when user clicks on backdrop outside the dialog
+courseDetails.addEventListener('click', (event) => {
+    const dialogBounds = courseDetails.getBoundingClientRect();
+    if (
+        event.clientX < dialogBounds.left ||
+        event.clientX > dialogBounds.right ||
+        event.clientY < dialogBounds.top ||
+        event.clientY > dialogBounds.bottom
+    ) {
+        courseDetails.close();
+    }
+});
 
 function displayCourses(filteredCourses) {
     courseList.innerHTML = '';
@@ -77,6 +111,12 @@ function displayCourses(filteredCourses) {
             card.classList.add('completed');
         }
         card.textContent = `${course.subject} ${course.number}`;
+
+        // Add event listener to open detail modal
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         courseList.appendChild(card);
     });
 
