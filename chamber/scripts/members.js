@@ -1,24 +1,3 @@
-// Nav Toggle and Footer Dates for all pages
-const menuToggle = document.querySelector("#menu-toggle");
-const navMenu = document.querySelector("#nav-menu");
-
-if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("open");
-        menuToggle.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
-    });
-}
-
-const currentYearEl = document.querySelector("#currentyear");
-if (currentYearEl) {
-    currentYearEl.textContent = new Date().getFullYear();
-}
-
-const lastModifiedEl = document.querySelector("#lastModified");
-if (lastModifiedEl) {
-    lastModifiedEl.textContent = `Last Modification: ${document.lastModified}`;
-}
-
 // Directory Page Grid/List View & Data Fetching
 const membersContainer = document.querySelector("#members-container");
 const gridButton = document.querySelector("#grid");

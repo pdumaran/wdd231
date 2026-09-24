@@ -10,12 +10,12 @@ if (menuToggle && navMenu) {
 }
 
 // Footer Dates
-const yearSpan = document.querySelector("#currentyear");
-if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
+const currentYearEl = document.querySelector("#currentyear");
+if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear();
 }
 
-const lastModifiedSpan = document.querySelector("#lastModified");
-if (lastModifiedSpan) {
-    lastModifiedSpan.textContent = `Last Modification: ${document.lastModified}`;
+const lastModifiedEl = document.querySelector("#lastModified");
+if (lastModifiedEl) {
+    lastModifiedEl.textContent = `Last Modification: ${document.lastModified}`;
 }

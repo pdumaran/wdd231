@@ -1,3 +1,6 @@
+/* ==========================================
+   CSS Reset & Base Setup
+   ========================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +14,7 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Accessibility Utility */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -61,6 +65,7 @@ header {
     font-size: 2rem;
     cursor: pointer;
     line-height: 1;
+    padding: 0.25rem 0.5rem;
 }
 
 nav {
@@ -79,6 +84,10 @@ nav ul {
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+nav li {
+    width: 100%;
 }
 
 nav a {
@@ -164,6 +173,11 @@ main h1 {
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e6b800;
 }
 
 /* Home Cards & Content Modules */
@@ -184,6 +198,12 @@ main h1 {
     padding-bottom: 0.4rem;
 }
 
+.event-item h3 {
+    font-size: 1.1rem;
+    color: #002244;
+    margin-bottom: 0.25rem;
+}
+
 .home-card hr {
     border: 0;
     border-top: 1px solid #eee;
@@ -195,6 +215,17 @@ main h1 {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.weather-info-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-info-group img {
+    width: 60px;
+    height: 60px;
 }
 
 .forecast-grid {
@@ -236,7 +267,48 @@ main h1 {
     margin-bottom: 0.75rem;
 }
 
-/* Directory Page Controls */
+.spotlight-card h3 {
+    color: #003366;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.membership-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.membership-badge.gold {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.membership-badge.silver {
+    background-color: #e2e3e5;
+    color: #383d41;
+    border: 1px solid #d6d8db;
+}
+
+.spotlight-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.spotlight-card a {
+    color: #003366;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+/* ==========================================
+   Directory Page Controls
+   ========================================== */
 .views-menu {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -251,6 +323,10 @@ main h1 {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.views-menu button:hover {
+    background-color: #002244;
 }
 
 #members-container.grid {
@@ -315,6 +391,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    font-size: 0.9rem;
 }
 
 .footer-social {
@@ -322,6 +399,16 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
+}
+
+.footer-social a {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
 }
 
 .footer-social img {
