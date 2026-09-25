@@ -1,3 +1,16 @@
+:root {
+    --primary-color: #003366;
+    --primary-hover: #002244;
+    --accent-color: #ffcc00;
+    --accent-hover: #e6b800;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --border-color: #cccccc;
+    --bg-card: #ffffff;
+    --valid-color: #28a745;
+    --invalid-color: #d9534f;
+}
+
 /* ==========================================
    CSS Reset & Base Setup
    ========================================== */
@@ -432,14 +445,13 @@ footer a {
 
 /* Form Styling */
 .join-form {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .join-form label {
@@ -447,7 +459,7 @@ footer a {
     flex-direction: column;
     font-weight: bold;
     font-size: 0.95rem;
-    color: #003366;
+    color: var(--primary-color);
     gap: 0.3rem;
 }
 
@@ -456,22 +468,22 @@ footer a {
 .join-form input[type="tel"],
 .join-form textarea {
     padding: 0.65rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 1rem;
     font-family: inherit;
 }
 
 .join-form input:required {
-    border-left: 5px solid #d9534f;
+    border-left: 5px solid var(--invalid-color);
 }
 
 .join-form input:required:valid {
-    border-left: 5px solid #28a745;
+    border-left: 5px solid var(--valid-color);
 }
 
 .membership-levels {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 1rem;
     display: flex;
@@ -481,7 +493,7 @@ footer a {
 
 .membership-levels legend {
     font-weight: bold;
-    color: #003366;
+    color: var(--primary-color);
     padding: 0 0.4rem;
 }
 
@@ -490,27 +502,26 @@ footer a {
     align-items: center;
     gap: 0.5rem;
     font-weight: normal;
-    color: #333;
+    color: var(--text-dark);
     cursor: pointer;
 }
 
 .submit-btn {
-    background-color: #003366;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-light);
     font-size: 1.1rem;
     font-weight: bold;
     padding: 0.8rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
 .submit-btn:hover {
-    background-color: #002244;
+    background-color: var(--primary-hover);
 }
 
-/* Membership Cards & Keyframe Animations */
+/* Membership Cards & Animations */
 .membership-cards {
     display: flex;
     flex-direction: column;
@@ -518,69 +529,67 @@ footer a {
 }
 
 .membership-cards h2 {
-    color: #003366;
+    color: var(--primary-color);
     font-size: 1.4rem;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 0.4rem;
 }
 
 .membership-cards .card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-left: 6px solid #003366;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 6px solid var(--primary-color);
     border-radius: 8px;
     padding: 1.25rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .membership-cards .card h3 {
-    color: #003366;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
 .membership-cards .card button {
     margin-top: 1rem;
-    background-color: #ffcc00;
-    color: #003366;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     border: none;
     padding: 0.5rem 1rem;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
 .membership-cards .card button:hover {
-    background-color: #e6b800;
+    background-color: var(--accent-hover);
 }
 
 /* Card Entrance Animation */
 .animate-card {
-    animation: fadeInSlideUp 0.8s ease-out forwards;
+    animation: fadeInSlideUp 0.6s ease-out forwards;
     opacity: 0;
 }
 
 .animate-card:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.15s;
 }
 
 .animate-card:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 .animate-card:nth-child(4) {
-    animation-delay: 0.6s;
+    animation-delay: 0.45s;
 }
 
 .animate-card:nth-child(5) {
-    animation-delay: 0.8s;
+    animation-delay: 0.6s;
 }
 
 @keyframes fadeInSlideUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(15px);
     }
 
     to {
@@ -597,11 +606,11 @@ footer a {
     max-width: 500px;
     width: 90%;
     margin: auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .membership-dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: #000000a6;
+    /* HEX with alpha */
 }
 
 .dialog-content {
@@ -612,7 +621,7 @@ footer a {
 }
 
 .dialog-content h3 {
-    color: #003366;
+    color: var(--primary-color);
 }
 
 .dialog-content ul {
@@ -631,24 +640,23 @@ footer a {
     border: none;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #d9534f;
+    color: var(--invalid-color);
     cursor: pointer;
 }
 
 .modal-price {
     font-size: 1.1rem;
-    color: #003366;
+    color: var(--primary-color);
 }
 
 /* Thank You Page Styling */
 .thankyou-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-left: 6px solid #003366;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 6px solid var(--primary-color);
     border-radius: 8px;
     padding: 1.5rem;
     margin-top: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
