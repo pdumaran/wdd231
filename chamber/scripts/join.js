@@ -1,20 +1,11 @@
-// Function to populate timestamp
-function setFormTimestamp() {
+document.addEventListener("DOMContentLoaded", () => {
+    // Set current ISO timestamp in hidden form input
     const timestampInput = document.querySelector("#timestamp");
     if (timestampInput) {
         timestampInput.value = new Date().toISOString();
     }
-}
 
-// Execute immediately if the DOM is already ready, otherwise on DOMContentLoaded
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", setFormTimestamp);
-} else {
-    setFormTimestamp();
-}
-
-// Modal dialog controls
-document.addEventListener("DOMContentLoaded", () => {
+    // Modal dialog controls
     const openButtons = document.querySelectorAll(".open-modal");
     const closeButtons = document.querySelectorAll(".close-modal");
 
