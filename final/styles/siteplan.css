@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #1b4332;
+    --secondary-color: #40916c;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --border-color: #d8f3dc;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 6px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.3rem;
+}
+
+p,
+li {
+    margin-bottom: 0.75rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+code {
+    background-color: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Section 4: Color Swatches */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.swatch {
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-heading);
+}
+
+.swatch span {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.swatch small {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    margin-top: 0.4rem;
+}
+
+.deep-forest {
+    background-color: #1b4332;
+}
+
+.moss-green {
+    background-color: #40916c;
+}
+
+.sand-bg {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #ccc;
+}
+
+.charcoal-text {
+    background-color: #212529;
+}
+
+/* Section 5: Typography Demo */
+.typography-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.font-sample {
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+}
+
+.font-heading h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+.font-body h3 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+}
+
+/* Section 6: Wireframes Grid */
+.wireframes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 650px) {
+    .wireframes {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        /* Prevents stretching cards to match height */
+    }
+}
+
+.wireframe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    height: 100%;
+    /* Keeps card boxes uniform if desired */
+}
+
+.wireframe-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.wireframe-item img {
+    max-width: 100%;
+    max-height: 400px;
+    /* Constrains vertical height for tall mobile wireframes */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* Ensures images scale proportionally without stretching */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+    max-width: 900px;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
