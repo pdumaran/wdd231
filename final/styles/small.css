@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1b4332;
-    --secondary-color: #40916c;
+    --secondary-color: #2b7a58; /* Darkened from #40916c for 5.25:1 WCAG AA contrast */
     --bg-color: #f8f9fa;
     --text-color: #212529;
     --white: #ffffff;
@@ -201,7 +201,7 @@ main {
 .trail-card .location {
     font-style: italic;
     font-size: 0.875rem;
-    color: #6c757d;
+    color: #595959; /* Enhanced contrast ratio from #6c757d */
     margin-bottom: 0.5rem;
 }
 
@@ -397,6 +397,5 @@ footer a:hover {
 
 .social-links img {
     filter: brightness(0) invert(1);
-    /* Keeps icons clear and white over dark green footer */
     display: block;
 }
