@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1b4332;
-    --secondary-color: #2b7a58;
+    --secondary-color: #40916c;
     --bg-color: #f8f9fa;
     --text-color: #212529;
     --white: #ffffff;
@@ -118,8 +118,8 @@ main {
     padding: 0 1rem;
 }
 
-/* Custom Buttons (Renamed from .btn-primary) */
-.eco-btn-primary {
+/* Buttons */
+.btn-primary {
     background-color: var(--accent-gold);
     color: var(--primary-color);
     border: none;
@@ -131,13 +131,13 @@ main {
     transition: background-color 0.2s ease;
 }
 
-.eco-btn-primary:hover {
+.btn-primary:hover {
     background-color: var(--accent-gold-hover);
     text-decoration: none;
 }
 
-/* Hero Section (Renamed from .hero) */
-.eco-hero {
+/* Cards & Grid */
+.hero {
     background-color: var(--primary-color);
     color: var(--white);
     border-radius: 8px;
@@ -146,25 +146,25 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.eco-hero img {
+.hero img {
     width: 100%;
     height: 280px;
     object-fit: cover;
     display: block;
 }
 
-.eco-hero-content {
+.hero-content {
     padding: 1.5rem;
     text-align: center;
 }
 
-.eco-hero-content h1 {
+.hero-content h1 {
     color: var(--white);
     margin-bottom: 0.5rem;
     font-size: 1.75rem;
 }
 
-.eco-hero-content p {
+.hero-content p {
     margin-bottom: 1rem;
 }
 
@@ -201,12 +201,11 @@ main {
 .trail-card .location {
     font-style: italic;
     font-size: 0.875rem;
-    color: #595959;
+    color: #6c757d;
     margin-bottom: 0.5rem;
 }
 
-/* Custom Tag Badge (Renamed from .badge) */
-.trail-badge {
+.trail-card .badge {
     display: inline-block;
     background-color: var(--secondary-color);
     color: var(--white);
@@ -245,8 +244,8 @@ main {
     color: var(--white);
 }
 
-/* Controls & Filters (Renamed from .controls) */
-.eco-controls {
+/* Controls & Filters */
+.controls {
     background: var(--white);
     padding: 1rem;
     border-radius: 8px;
@@ -257,8 +256,8 @@ main {
     gap: 1rem;
 }
 
-.eco-controls input,
-.eco-controls select {
+.controls input,
+.controls select {
     padding: 0.6rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -308,8 +307,8 @@ main {
     color: var(--primary-color);
 }
 
-/* Custom Form Styles (Renamed from .form-container and .form-group) */
-.eco-form-container {
+/* Form Styles */
+.form-container {
     background: var(--white);
     padding: 1.5rem;
     border-radius: 8px;
@@ -318,21 +317,21 @@ main {
     margin: 0 auto;
 }
 
-.eco-form-group {
+.form-group {
     margin-bottom: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
 
-.eco-form-group label {
+.form-group label {
     font-weight: 600;
     color: var(--primary-color);
 }
 
-.eco-form-group input,
-.eco-form-group select,
-.eco-form-group textarea {
+.form-group input,
+.form-group select,
+.form-group textarea {
     padding: 0.65rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -340,11 +339,11 @@ main {
     font-family: inherit;
 }
 
-.eco-form-group input:required {
+.form-group input:required {
     border-left: 4px solid #dc3545;
 }
 
-.eco-form-group input:required:valid {
+.form-group input:required:valid {
     border-left: 4px solid #28a745;
 }
 
@@ -398,5 +397,6 @@ footer a:hover {
 
 .social-links img {
     filter: brightness(0) invert(1);
+    /* Keeps icons clear and white over dark green footer */
     display: block;
 }
