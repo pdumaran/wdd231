@@ -1,0 +1,146 @@
+[
+    {
+        "id": "trail-1",
+        "name": "Casaroro Falls Trail",
+        "location": "Valencia, Negros Oriental",
+        "difficulty": "Moderate",
+        "elevation": "550m",
+        "description": "A popular 350-step descent leading to a dramatic 100-foot vertical waterfall nestled in a deep canyon gorge.",
+        "image": "images/casaroro-falls.webp"
+    },
+    {
+        "id": "trail-2",
+        "name": "Mt. Talinis (Cuernos de Negros)",
+        "location": "Valencia / Dauin",
+        "difficulty": "Challenging",
+        "elevation": "1,903m",
+        "description": "The second highest peak in Negros Oriental featuring volcanic lakes, mossy cloud forests, and sulfur vents.",
+        "image": "images/mt-talinis.webp"
+    },
+    {
+        "id": "trail-3",
+        "name": "Pulangbato Thermal Falls Trail",
+        "location": "Ocoy Valley, Valencia",
+        "difficulty": "Easy",
+        "elevation": "320m",
+        "description": "An easy scenic walk featuring natural sulfur-stained red rock cascades and thermal hot springs.",
+        "image": "images/pulangbato-falls.webp"
+    },
+    {
+        "id": "trail-4",
+        "name": "Balinsasayao Twin Lakes Nature Trail",
+        "location": "San Jose, Negros Oriental",
+        "difficulty": "Easy",
+        "elevation": "830m",
+        "description": "Tranquil rainforest loop surrounding two pristine crater lakes, ideal for bird watching and kayaking.",
+        "image": "images/twin-lakes.webp"
+    },
+    {
+        "id": "trail-5",
+        "name": "Japanese Shrine Summit Trail",
+        "location": "Valencia",
+        "difficulty": "Moderate",
+        "elevation": "850m",
+        "description": "A historic ridge trail offering panoramic views of Dumaguete City and Siquijor Island across the sea.",
+        "image": "images/japanese-shrine.webp"
+    },
+    {
+        "id": "trail-6",
+        "name": "Lake Danao Ridge Walk",
+        "location": "San Jose",
+        "difficulty": "Moderate",
+        "elevation": "860m",
+        "description": "A lush perimeter path hugging the smaller twin crater lake surrounded by protected virgin forest.",
+        "image": "images/lake-danao.webp"
+    },
+    {
+        "id": "trail-7",
+        "name": "Apo Island Coastal Marine Trail",
+        "location": "Dauin",
+        "difficulty": "Easy",
+        "elevation": "45m",
+        "description": "An island coastal walk leading to the historic lighthouse and volcanic rock formations overlooking coral reefs.",
+        "image": "images/apo-island.webp"
+    },
+    {
+        "id": "trail-8",
+        "name": "Bais Mangrove Forest Boardwalk",
+        "location": "Bais City",
+        "difficulty": "Easy",
+        "elevation": "10m",
+        "description": "An elevated wooden trail traversing hundreds of hectares of protected mangrove ecosystems.",
+        "image": "images/bais-mangrove.webp"
+    },
+    {
+        "id": "trail-9",
+        "name": "Niludhan Falls Eco-Walk",
+        "location": "Bayawan City",
+        "difficulty": "Easy",
+        "elevation": "210m",
+        "description": "A short curtain waterfall walk with a wide 25-meter cascade surrounded by tropical foliage.",
+        "image": "images/niludhan-falls.webp"
+    },
+    {
+        "id": "trail-10",
+        "name": "Mt. Kanlaon Southern Slope Trail",
+        "location": "Canlaon City border",
+        "difficulty": "Challenging",
+        "elevation": "2,435m",
+        "description": "An intense trek through active volcanic terrain, pine ridges, and high-altitude cloud forests.",
+        "image": "images/mt-kanlaon.webp"
+    },
+    {
+        "id": "trail-11",
+        "name": "Bacong Highland Ridge Loop",
+        "location": "Bacong, Negros Oriental",
+        "difficulty": "Moderate",
+        "elevation": "410m",
+        "description": "Scenic agricultural upland trail overlooking coastal coconut groves and Tañon Strait.",
+        "image": "images/bacong-ridge.webp"
+    },
+    {
+        "id": "trail-12",
+        "name": "Balerte Sulfur Vents Walk",
+        "location": "Valencia",
+        "difficulty": "Moderate",
+        "elevation": "680m",
+        "description": "A geothermal trail showcasing active steaming fumaroles and geothermal river vents.",
+        "image": "images/balerte-vents.webp"
+    },
+    {
+        "id": "trail-13",
+        "name": "Dauin Marine Sanctuary Beach Trail",
+        "location": "Dauin",
+        "difficulty": "Easy",
+        "elevation": "15m",
+        "description": "A relaxing shoreline trek connecting coastal biodiversity reserves and dive spots.",
+        "image": "images/dauin-beach.webp"
+    },
+    {
+        "id": "trail-14",
+        "name": "Manjuyod Sandbar Low-Tide Trail",
+        "location": "Bais City / Manjuyod",
+        "difficulty": "Easy",
+        "elevation": "0m",
+        "description": "A unique shallow sea-walk accessible during low tide along a 7-kilometer white sand bar.",
+        "image": "images/manjuyod-sandbar.webp"
+    },
+    {
+        "id": "trail-15",
+        "name": "Baslay Hot Springs Trail",
+        "location": "Dauin",
+        "difficulty": "Moderate",
+        "elevation": "520m",
+        "description": "An upland eco-community trail passing volcanic hot springs and organic coffee farms.",
+        "image": "images/baslay-springs.webp"
+    },
+    {
+        "id": "trail-16",
+        "name": "Okiot River Canyon Walk",
+        "location": "Bais City",
+        "difficulty": "Challenging",
+        "elevation": "290m",
+        "description": "An adventurous river-trekking trail through carved limestone canyons and natural pools.",
+        "image": "images/okiot-river.webp"
+    }
+]

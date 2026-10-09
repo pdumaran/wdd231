@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Request Received - Negros Oriental Eco-Trails</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/main.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const detailsContainer = document.querySelector("#submission-details");
+
+            if (detailsContainer && urlParams.has("fullname")) {
+                detailsContainer.innerHTML = `
+          <p><strong>Name:</strong> ${urlParams.get("fullname")}</p>
+          <p><strong>Email:</strong> ${urlParams.get("email")}</p>
+          <p><strong>Phone:</strong> ${urlParams.get("phone")}</p>
+          <p><strong>Requested Trail:</strong> ${urlParams.get("trail")}</p>
+          <p><strong>Hike Date:</strong> ${urlParams.get("hike_date")}</p>
+          <p><strong>Group Size:</strong> ${urlParams.get("group_size")}</p>
+        `;
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="site-title">Negros Oriental Eco-Trails</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container" style="text-align: center;">
+            <h1>Thank You for Your Inquiry!</h1>
+            <p>A licensed local guide will review your request and contact you shortly.</p>
+            <br>
+            <div id="submission-details"
+                style="text-align: left; background: #f8f9fa; padding: 1rem; border-radius: 6px;"></div>
+            <br>
+            <a href="index.html" class="btn-primary">Return to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Pierre Phil D. Bangay</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav a {
+        border-bottom: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .featured-grid,
+    .trails-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .controls {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .controls input,
+    .controls select {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .featured-grid,
+    .trails-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Negros Oriental Eco-Trails & Adventure Guide - Home</title>
+    <meta name="description"
+        content="Discover top hiking trails, waterfalls, and nature eco-tours in Negros Oriental, Philippines. Plan your adventure today!">
+    <meta name="author" content="Pierre Phil D. Bangay">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Negros Oriental Eco-Trails & Adventure Guide">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pdumaran.github.io/wdd231/final/images/hero-mt-talinis.webp">
+    <meta property="og:url" content="https://pdumaran.github.io/wdd231/final/index.html">
+    <meta property="og:description"
+        content="Explore mountain peaks, crater lakes, and waterfall hikes in Negros Oriental.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Eco-Trails Logo" width="50" height="50" loading="lazy">
+            <span class="site-title">Negros Oriental Eco-Trails</span>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="trails.html">Explore Trails</a></li>
+                <li><a href="booking.html">Book Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <img src="images/hero-mt-talinis.webp" alt="Mt. Talinis Ridge line" width="1200" height="400"
+                    loading="eager">
+            </picture>
+            <div class="hero-content">
+                <h1>Discover the Eco-Trails of Negros Oriental</h1>
+                <p>Your ultimate outdoor guide to mountain summits, pristine crater lakes, and volcanic waterfalls.</p>
+                <a href="trails.html" class="btn-primary">Browse All Trails</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Trail Highlights</h2>
+            <div class="featured-grid">
+                <article class="trail-card">
+                    <img src="images/casaroro-falls.webp" alt="Casaroro Falls" width="300" height="200" loading="lazy">
+                    <h3>Casaroro Falls Trail</h3>
+                    <span class="badge">Moderate</span>
+                    <p>A striking 100-foot waterfall cascade hidden inside a narrow mountain gorge in Valencia.</p>
+                    <a href="trails.html" class="btn-primary">View Trail Details</a>
+                </article>
+
+                <article class="trail-card">
+                    <img src="images/mt-talinis.webp" alt="Mt. Talinis Summit" width="300" height="200" loading="lazy">
+                    <h3>Mt. Talinis Summit</h3>
+                    <span class="badge">Challenging</span>
+                    <p>Explore volcanic crater lakes and ancient cloud forests on Negros Oriental's second highest peak.
+                    </p>
+                    <a href="trails.html" class="btn-primary">View Trail Details</a>
+                </article>
+
+                <article class="trail-card">
+                    <img src="images/twin-lakes.webp" alt="Balinsasayao Twin Lakes" width="300" height="200"
+                        loading="lazy">
+                    <h3>Twin Lakes Eco-Park</h3>
+                    <span class="badge">Easy</span>
+                    <p>Tranquil crater lake walks surrounded by protected rainforest fauna and flora.</p>
+                    <a href="trails.html" class="btn-primary">View Trail Details</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                <img src="images/github.svg" alt="GitHub Logo" width="30" height="30">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                <img src="images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X Twitter Profile">
+                <img src="images/twitter.svg" alt="X Twitter Logo" width="30" height="30">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Pierre Phil D. Bangay | Negros Oriental Eco-Trails</p>
+        <p><a href="attributions.html">Resource Attributions</a></p>
+        <p><a href="https://youtu.be/example" target="_blank" rel="noopener" class="video-link">📹 Watch Project
+                Demonstration Video</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

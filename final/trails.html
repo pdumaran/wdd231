@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Negros Oriental Eco-Trails - Directory & Search</title>
+    <meta name="description"
+        content="Filter and search 15+ hiking trails, elevation profiles, and difficulty levels across Negros Oriental.">
+    <meta name="author" content="Pierre Phil D. Bangay">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Negros Oriental Eco-Trails Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pdumaran.github.io/wdd231/final/images/hero-mt-talinis.webp">
+    <meta property="og:url" content="https://pdumaran.github.io/wdd231/final/trails.html">
+    <meta property="og:description" content="Search and save your favorite hiking trails in Negros Oriental.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/trails.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Eco-Trails Logo" width="50" height="50" loading="lazy">
+            <span class="site-title">Negros Oriental Eco-Trails</span>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html" class="active">Explore Trails</a></li>
+                <li><a href="booking.html">Book Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Eco-Trail Explorer Directory</h1>
+
+        <div id="visit-banner" class="visit-banner" role="status"></div>
+
+        <section class="controls">
+            <input type="text" id="search-input" placeholder="Search trail by name or town..."
+                aria-label="Search trail by name or town">
+            <select id="difficulty-filter" aria-label="Filter by difficulty level">
+                <option value="all">All Difficulty Levels</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Challenging">Challenging</option>
+            </select>
+        </section>
+
+        <section id="trails-container" class="trails-grid">
+            <p>Loading eco-trails data...</p>
+        </section>
+
+        <dialog id="trail-modal" class="trail-modal">
+            <div class="modal-content">
+                <button id="close-modal" class="close-modal" aria-label="Close modal">&times;</button>
+                <h2 id="modal-title"></h2>
+                <p><strong>Location:</strong> <span id="modal-location"></span></p>
+                <p><strong>Elevation:</strong> <span id="modal-elevation"></span></p>
+                <p><strong>Difficulty:</strong> <span id="modal-difficulty"></span></p>
+                <p id="modal-description"></p>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                <img src="images/github.svg" alt="GitHub Logo" width="30" height="30">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                <img src="images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X Twitter Profile">
+                <img src="images/twitter.svg" alt="X Twitter Logo" width="30" height="30">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Pierre Phil D. Bangay | Negros Oriental Eco-Trails</p>
+        <p><a href="attributions.html">Resource Attributions</a></p>
+        <p><a href="https://youtu.be/example" target="_blank" rel="noopener" class="video-link">📹 Watch Project
+                Demonstration Video</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
