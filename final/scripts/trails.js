@@ -74,11 +74,11 @@ function renderTrails(trails) {
       <img src="${trail.image}" alt="${trail.name}" width="300" height="200" loading="lazy">
       <h3>${trail.name}</h3>
       <p class="location">📍 ${trail.location}</p>
-      <span class="badge">Difficulty: ${trail.difficulty}</span>
+      <span class="trail-badge">Difficulty: ${trail.difficulty}</span>
       <p>Elevation: <strong>${trail.elevation}</strong></p>
       <p>${trail.description}</p>
       <div class="trail-card-footer">
-        <button type="button" class="btn-primary details-btn" data-id="${trail.id}">Learn More</button>
+        <button type="button" class="eco-btn-primary details-btn" data-id="${trail.id}">Learn More</button>
         <button type="button" class="fav-btn ${isFav ? 'active' : ''}" data-id="${trail.id}">
           ${isFav ? '♥ Saved' : '♡ Save'}
         </button>
