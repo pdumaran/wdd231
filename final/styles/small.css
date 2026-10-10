@@ -357,6 +357,10 @@ main {
     gap: 0.75rem;
 }
 
+.external-link {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
