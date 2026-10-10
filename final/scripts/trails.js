@@ -78,7 +78,7 @@ function renderTrails(trails) {
       <p>Elevation: <strong>${trail.elevation}</strong></p>
       <p>${trail.description}</p>
       <div class="trail-card-footer">
-        <button type="button" class="btn-primary details-btn" data-id="${trail.id}">Learn More</button>
+        <button type="button" class="action-btn details-btn" data-id="${trail.id}">Learn More</button>
         <button type="button" class="fav-btn ${isFav ? 'active' : ''}" data-id="${trail.id}">
           ${isFav ? '♥ Saved' : '♡ Save'}
         </button>

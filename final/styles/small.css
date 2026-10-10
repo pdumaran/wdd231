@@ -120,7 +120,7 @@ main {
 }
 
 /* Buttons */
-.btn-primary {
+.action-btn {
     background-color: var(--accent-gold);
     color: var(--primary-color);
     border: none;
@@ -132,7 +132,7 @@ main {
     transition: background-color 0.2s ease;
 }
 
-.btn-primary:hover {
+.action-btn:hover {
     background-color: var(--accent-gold-hover);
     text-decoration: none;
 }
@@ -208,7 +208,8 @@ main {
 
 .trail-card .badge {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    /* Fixed WCAG contrast ratio (11.08:1) */
     color: var(--white);
     font-size: 0.75rem;
     padding: 0.2rem 0.5rem;
@@ -309,7 +310,7 @@ main {
 }
 
 /* Form Styles */
-.form-container {
+.form-box {
     background: var(--white);
     padding: 1.5rem;
     border-radius: 8px;
@@ -318,21 +319,21 @@ main {
     margin: 0 auto;
 }
 
-.form-group {
+.form-field {
     margin-bottom: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
 
-.form-group label {
+.form-field label {
     font-weight: 600;
     color: var(--primary-color);
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-field input,
+.form-field select,
+.form-field textarea {
     padding: 0.65rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -340,12 +341,20 @@ main {
     font-family: inherit;
 }
 
-.form-group input:required {
+.form-field input:required {
     border-left: 4px solid #dc3545;
 }
 
-.form-group input:required:valid {
+.form-field input:required:valid {
     border-left: 4px solid #28a745;
+}
+
+/* Attributions list styling (replaces inline styles) */
+.attribution-list {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 /* Footer */
@@ -398,6 +407,5 @@ footer a:hover {
 
 .social-links img {
     filter: brightness(0) invert(1);
-    /* Keeps icons clear and white over dark green footer */
     display: block;
 }
